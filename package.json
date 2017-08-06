@@ -1,0 +1,25 @@
+{
+  "name": "ferreteria",
+  "version": "0.0.1",
+  "description": "Ferreteria para el cuadrado",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HECNT/ferreteria-cuadrado.git"
+  },
+  "keywords": [
+    "Ferreteria"
+  ],
+  "author": "Osvaldo Hernandez <hecntdev@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HECNT/ferreteria-cuadrado/issues"
+  },
+  "homepage": "https://github.com/HECNT/ferreteria-cuadrado#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
