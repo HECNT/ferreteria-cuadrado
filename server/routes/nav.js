@@ -14,11 +14,19 @@ router.get('/', function(req, res) {
 });
 
 router.get('/inicio', function(req, res) {
-	res.render('home', {url:url});
+  if (req.session.usuario) {
+    res.render('home', {url:url})
+  } else {
+    res.redirect('/login')
+  }
 });
 
 router.get('/login', function (req, res) {
-  res.render('login', {url:url})
+  if (req.session.usuario) {
+    res.redirect('/inicio')
+  } else {
+    res.render('login', {url:url, login : false})
+  }
 })
 
 module.exports = router;
