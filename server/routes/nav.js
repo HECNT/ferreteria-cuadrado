@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-
+var url = 'http://localhost:4001/'
 // router.get('/', function(req, res) {
 // 	if(req.session.usuario) {
 // 		res.redirect('inicio');
@@ -14,7 +14,11 @@ router.get('/', function(req, res) {
 });
 
 router.get('/inicio', function(req, res) {
-	res.render('home', {url:'http://localhost:4001/'});
+	res.render('home', {url:url});
 });
+
+router.get('/login', function (req, res) {
+  res.render('login', {url:url})
+})
 
 module.exports = router;
